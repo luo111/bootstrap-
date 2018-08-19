@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #wrap {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            animation: rotate 3s linear infinite;
+        }
+
+        @-webkit-keyframes rotate {
+            from {
+                -webkit-transform: rotate(0deg)
+            }
+            to {
+                -webkit-transform: rotate(360deg)
+            }
+        }
+
+
+       
+
+        #wrap>div {
+            /* margin: 5px; */
+            width: 150px;
+            height: 150px;
+            float: left;
+            background: palevioletred;
+            box-sizing: border-box;
+        }
+
+        #wrap>div:nth-child(1),
+        #wrap>div:nth-child(4) {
+            border-radius: 0 80%;
+        }
+
+        #wrap>div:nth-child(2),
+        #wrap>div:nth-child(3) {
+            border-radius: 80% 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>
